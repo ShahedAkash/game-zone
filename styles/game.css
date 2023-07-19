@@ -27,7 +27,7 @@
     line-height: 1.8rem;
     }
 .global-artical{
-    width: 40%;
+    width: 45%;
     }
 .global-img-rapper{
     width: 40%;
@@ -151,16 +151,39 @@
     gap: 1rem;
     margin-top: 2rem;
     }
+    /* experiment */
+.online-img-wrapper{
+    position: relative;
+    }
+.online-wrapper-content{
+    width: 100%;
+    height: 82%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 10px;
+}
+.online-wrapper-content:hover{
+    opacity: 1;
+}
+    /* ------ */
 .online-game-container > div{
     width: 24%;
     }
 .online-game-container-img{
     width: 100%;
     }
-.online-game-container-img:hover{
+/* .online-game-container-img:hover{
     border-radius: 16px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
-    }
+    } */
 
 /* download and Install section */
 #downloadInstall-section{
@@ -187,6 +210,94 @@
     transform: scale(0.4) translateX(600px) translateY(380px);
     }
 
+/* Lists of Game style */
+#list-game-section{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    }
+.list-game-container{
+    width: 80%;
+    margin: 5rem auto;
+    padding: 3rem 0;
+    }
+.list-of-game{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    }
+.list-of-game > div p{
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    padding-left: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    }
+.list-of-game > div :hover{
+    background-color: #FFF;
+    border-radius: 50px;
+    color: #FF42A5;
+    }
+/* Footer section */
+footer{
+    background-color: #0B0223;
+    padding: 3rem 0;
+    }
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+    }
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    }
+.footer-logo > h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.footer-list{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    }
+.footer-list > a{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    }
+.brands-logo{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    }
+.terms-conditions{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    }
+.terms-conditions > a{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    }
+.copy-right{
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    }
+
 
 
 
@@ -199,7 +310,7 @@
 /* Mobile View */
 @media screen and (max-width: 576px) {
     .global-artical{
-        width: 80%;
+        width: 90%;
         }
     .global-img-rapper{
         width: 80%;
@@ -239,5 +350,16 @@
         }
     .install-img{
         transform: scale(0.4) translateX(300px) translateY(280px);
+        }
+    .online-wrapper-content{
+        height: 86%;
+    }
+    .footer-list{
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        /* gap: 1rem; */
         }
 }
