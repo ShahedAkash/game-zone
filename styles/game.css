@@ -15,19 +15,22 @@
     width: 80%;
     margin: 50px auto;
     }
-.global-title-color{
-    color: var(--title-color);
+.global-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin: 2rem 0;
     }
 .global-description{
     color: var(--description-color);
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.8rem;
     }
 .global-artical{
-    width: 48%;
+    width: 40%;
     }
 .global-img-rapper{
-    width: 52%;
+    width: 40%;
     }
 .primary-btn{
     color: #FFF;
@@ -93,7 +96,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 4rem;
+    gap: 5rem;
     }
 .play-title{
     color: #0B0223;
@@ -136,6 +139,55 @@
     line-height: 1.5rem;
     }
 
+/* Online Game Section */
+#Online-game-section{
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+    }
+.online-game-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    }
+.online-game-container > div{
+    width: 24%;
+    }
+.online-game-container-img{
+    width: 100%;
+    }
+.online-game-container-img:hover{
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+
+/* download and Install section */
+#downloadInstall-section{
+
+    }
+#download-bg-img{
+    background: url(../images/Rectangle\ 55.png) no-repeat;
+    background-size: 100%;
+    }
+.download-img{
+    transform: scale(0.4) translateX(-600px) translateY(380px);
+    }
+
+/* install style */
+.install-section{
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+    }
+#install-bg-img{
+    background: url(../images/Rectangle\ 67.png) no-repeat;
+    background-size: 100%;
+    }
+.install-img{
+    transform: scale(0.4) translateX(600px) translateY(380px);
+    }
+
+
 
 
 
@@ -147,16 +199,21 @@
 /* Mobile View */
 @media screen and (max-width: 576px) {
     .global-artical{
-        width: 100%;
+        width: 80%;
         }
     .global-img-rapper{
-        width: 100%;
+        width: 80%;
+        }
+    .nav-logo-section{
+        margin-bottom: 1rem;
         }
     .nav-container,
-    .nav-manu{
+    .nav-manu,
+    .online-game-container{
         flex-direction: column;
         }
-    #play-section{
+    #play-section,
+    #gamer-section{
         background: none;
         }
     .play-container{
@@ -164,5 +221,23 @@
         }
     .gamer-artical{
         text-align: center;
-    }
+        }
+    .online-game-container > div{
+        width: 100%;
+        }
+    .install-section,
+    .download-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        }
+    #download-bg-img,#install-bg-img{
+        background-size: 90%;
+        }
+    .download-img{
+        transform: scale(0.4) translateX(-350px) translateY(300px);
+        }
+    .install-img{
+        transform: scale(0.4) translateX(300px) translateY(280px);
+        }
 }
